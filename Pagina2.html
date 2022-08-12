@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<canvas width="600" height="400">
+   
+</canvas>
+<script>
+    document.write('<h1>Hola</h1>');
+    
+    function cuadro(x,y,color){
+        var pantalla=document.querySelector('canvas');
+        var pincel=pantalla.getContext('2d');
+        pincel.fillStyle=color   //Caracteristica
+        pincel.fillRect(x,y,50,50);  //Funcion
+        pincel.strokeStyle='black';
+        pincel.strokeRect(x,y,50,50);
+    }
+
+for (let x = 0; x < 600; x+=50) {
+    cuadro(x,0,'green');
+        cuadro(x,50,'yellow')
+        cuadro(x,100,'red')
+}
+
+    /*
+    var x=0;
+    while (x<600) {
+        cuadro(x,0,'green');
+        cuadro(x,50,'yellow')
+        cuadro(x,100,'red')
+        x+=50;
+    }*/
+
+
+    /*
+    cuadro(0,0,'green');
+    cuadro(50,0,'yellow');
+    cuadro(100,0,'red');
+
+    cuadro(50,50,'green');
+    cuadro(0,50,'red');
+    cuadro(100,50,'yellow');
+    
+    cuadro(100,100,'green');
+    cuadro(0,100,'yellow');
+    cuadro(50,100,'red');
+
+    cuadro(150,150,'blue');
+
+
+    */
+    /*
+    var pantalla=document.querySelector('canvas');
+        var pincel=pantalla.getContext('2d');
+        pincel.fillStyle='green'   //Caracteristica
+        pincel.fillRect(0,0,50,50);  //Funcion
+        pincel.strokeStyle='black';
+        pincel.strokeRect(0,0,50,50);
+
+    for (let index = 1; index < 15; index++) {
+        pincel.fillRect(index*50,0,50,50);  //Funcion
+    pincel.strokeStyle='black';
+    pincel.strokeRect(index*50,0,50,50);
+    }*/
+
+</script>
+</html>
